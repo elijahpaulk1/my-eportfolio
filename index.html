@@ -3,17 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ePortfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Elijah Paulk's ePortfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo" id="logo">
         <h1>Welcome to My ePortfolio</h1>
     </header>
-    <main>
-        <p>This is a sample ePortfolio page.</p>
-    </main>
-    <script src="scripts.js"></script>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Elijah Paulk, and I am currently pursuing a Bachelor's Degree in Computer Science with an expected graduation date of August 2024. I have a passion for software development, particularly in creating maintainable, scalable, and innovative solutions to real-world problems.</p>
+        </section>
+
+        <section id="artifacts">
+            <h2>Artifacts</h2>
+            <ul>
+                <li><a href="cs340_project.html">CS-340 Project: Web Application</a></li>
+                <li><a href="cs360_inventory_tracker.html">CS-360 Project: Inventory Tracker</a></li>
+                <!-- Add more artifacts as needed -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:elijah.paulk@example.com">elijah.paulk@example.com</a> for any inquiries or collaboration opportunities.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Elijah Paulk</p>
+    </footer>
 </body>
 </html>
