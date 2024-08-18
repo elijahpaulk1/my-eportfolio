@@ -31,6 +31,12 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+        pre {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
@@ -55,3 +61,26 @@
         <h2>Code Samples</h2>
         <p>Here is a snippet of the Python code used in the project:</p>
         <pre>
+# Sample Python Code
+from flask import Flask, request, jsonify
+from pymongo import MongoClient
+
+app = Flask(__name__)
+client = MongoClient('mongodb://localhost:27017/')
+db = client['animal_shelter']
+
+@app.route('/animals', methods=['GET'])
+def get_animals():
+    animals = db.animals.find()
+    return jsonify([animal for animal in animals])
+
+if __name__ == '__main__':
+    app.run(debug=True)
+        </pre>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elijah Paulk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
